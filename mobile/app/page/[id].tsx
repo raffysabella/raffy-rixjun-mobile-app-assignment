@@ -38,7 +38,7 @@ export default function Product() {
           <Pressable onPress={() => router.navigate('/home')}
             className="absolute top-4 left-3 flex-row items-center bg-white/90 p-2 rounded-full px-4 shadow-md">
             <Text className="text-lg font-bold text-slate-900">
-              <FontAwesome size={17} name='arrow-left' />Back</Text>
+              <FontAwesome size={17} name='arrow-left' />  Back</Text>
           </Pressable>
         </View>
         <View className="p-6 -mt-8 bg-white flex-1 min-h-[500px]">
