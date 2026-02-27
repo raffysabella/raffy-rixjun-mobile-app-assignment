@@ -35,13 +35,10 @@ export default function Product() {
             source={{ uri: `http://192.168.56.1:8001/storage/${product?.image}` }} 
           />
 
-          <Pressable 
-            onPress={() => router.navigate('/home')}
-            className="absolute top-4 left-3 flex-row items-center bg-white/90 p-2 rounded-full px-4 shadow-md"
-          >
+          <Pressable onPress={() => router.navigate('/home')}
+            className="absolute top-4 left-3 flex-row items-center bg-white/90 p-2 rounded-full px-4 shadow-md">
             <Text className="text-lg font-bold text-slate-900">
-              <FontAwesome size={17} name='arrow-left' /> Back
-            </Text>
+              <FontAwesome size={17} name='arrow-left' />Back</Text>
           </Pressable>
         </View>
         <View className="p-6 -mt-8 bg-white flex-1 min-h-[500px]">
@@ -54,12 +51,8 @@ export default function Product() {
             </Text>
           </View>
           <View className="mt-6">
-            <Text className="text-xl uppercase tracking-[2px] font-bold text-slate-400 mb-2">
-             Description
-            </Text>
-            <Text className="text-base text-slate-500 leading-7">
-              {product?.description}
-            </Text>
+            <Text className="text-xl uppercase tracking-[2px] font-bold text-slate-400 mb-2">Description</Text>
+            <Text className="text-base text-slate-500 leading-7">{product?.description}</Text>
             <View className="h-20" />
           </View>
         </View>
